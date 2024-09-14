@@ -48,8 +48,12 @@ class MainActivity : AppCompatActivity() {
                 Log.i("Error", "Correo o contraseña incorrectos")
                 return@setOnClickListener
             }
+            val user = User.staticUsers.firstOrNull(){
+                it.email == email && it.password == password
+            }
             val editor = sharedPreferences.edit()
             editor.putBoolean("isLogged", true)
+            editor.putString("userEmail", user?.email)
             editor.apply()
 
             startActivity(intent)
