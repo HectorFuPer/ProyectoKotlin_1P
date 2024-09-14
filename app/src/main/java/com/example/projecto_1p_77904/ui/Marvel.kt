@@ -9,12 +9,14 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.projecto_1p_77904.MainActivity
 import com.example.projecto_1p_77904.R
 import com.example.projecto_1p_77904.adapters.CategoryAdapter
-import com.example.projecto_1p_77904.models.Heroes
+import com.example.projecto_1p_77904.models.Category
+import com.example.projecto_1p_77904.models.User
 
 class Marvel : AppCompatActivity() {
     lateinit var username : TextView
@@ -26,11 +28,14 @@ class Marvel : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_marvel)
         val sharedPreferences = getSharedPreferences("mypref", Context.MODE_PRIVATE)
+        val userEmail = sharedPreferences.getString("userEmail", "")
+        val user = User.staticUsers.firstOrNull() { it.email == userEmail }
         username = findViewById(R.id.userTV)
         logout = findViewById(R.id.logoutBtn)
         categoriesRecyclerView = findViewById(R.id.primerRycler)
-        categoriesRecyclerView.adapter = CategoryAdapter(Heroes.marvelheroes)
-        categoriesRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        categoriesRecyclerView.adapter = CategoryAdapter(Category.marvelheroes)
+        categoriesRecyclerView.layoutManager = GridLayoutManager(this, 2)
+        username.text = user?.name
 
         logout.setOnClickListener{
             val editor = sharedPreferences.edit()

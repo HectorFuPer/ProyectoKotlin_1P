@@ -1,24 +1,22 @@
 package com.example.projecto_1p_77904.models
 
-data class Heroes(val id : Int, val name : String, val image : String){
+data class Category(val id : Int, val name : String, val image : String){
     companion object{
         val marvelheroes = mutableListOf(
-            Heroes(id = 1, "Iron Man", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F320670435982947479%2F&psig=AOvVaw3TkxkWnFKWjH4H0ecxibTD&ust=1726381997677000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDhpqDowYgDFQAAAAAdAAAAABAQ"),
-            Heroes(id = 2, "Capitan America", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fas.com%2Fmeristation%2Fnoticias%2Fmarvel-presenta-el-nuevo-traje-del-capitan-america-para-el-comic-avengers-twilight-n%2F&psig=AOvVaw0y_9TA1CtEigdpuCyF9acX&ust=1726382319979000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNi0x77pwYgDFQAAAAAdAAAAABAJ"),
-            Heroes(id = 3, "Thor", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FThor_%2528Marvel_Cinematic_Universe%2529&psig=AOvVaw3eV0K3mUmsuLzAqeyEVGXA&ust=1726382449789000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjB5fjpwYgDFQAAAAAdAAAAABAE"),
-            Heroes(id = 4, "Hulk", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmagicdecor.in%2Fcollections%2Fhulk-wallpaper%2F&psig=AOvVaw16-QkbtZ_Yk0YHJ6QC_zSw&ust=1726382475504000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPDhioTqwYgDFQAAAAAdAAAAABAJ"),
-            Heroes(id = 5, "Spider Man", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rtve.es%2Fnoticias%2F20151026%2Fjulian-clemente-spiderman-mejor-personaje-ficcion-historia%2F1223940.shtml&psig=AOvVaw049PqUthxWN0iirvgcU0qN&ust=1726382518884000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPDd9pjqwYgDFQAAAAAdAAAAABAE"),
-            Heroes(id = 6, "Deadpool", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hobbyconsolas.com%2Fnoticias%2Fryan-reynolds-confirma-otro-regreso-otro-personaje-deadpool-2-1238984&psig=AOvVaw38krz4JjPQ9FK7Ot-sYYMe&ust=1726382535196000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJiiraPqwYgDFQAAAAAdAAAAABAJ"),
-            Heroes(id = 7, "Nombre SuperHeroe", "Link")
+            Category(id = 1, "Iron Man", "https://bk-latam-prod.s3.amazonaws.com/sites/burgerking.latam/files/BK_Web_WHOPPER_500X540px.png"),
+            Category(id = 2, "Capitan America", "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/3e/Escudo_del_Capitan_America.png/revision/latest?cb=20210416174536&path-prefix=es"),
+            Category(id = 3, "Thor", "https://img.freepik.com/vector-premium/logotipo-cabeza-thor-dios-nordico-trueno_128316-183.jpg"),
+            Category(id = 4, "Hulk", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqD-9QHrqFjCrC5QjQ5-TFENlgdWAjQibLQg&s"),
+            Category(id = 5, "Spider Man", "https://wallpapers-clan.com/wp-content/uploads/2024/02/aesthetic-spiderman-logo-desktop-wallpaper-preview.jpg"),
+            Category(id = 6, "Deadpool", "https://steamuserimages-a.akamaihd.net/ugc/930430061300890316/A72F99B8A98FCB0C25170E30E9D9F65F5BD276A8/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"),
         )
         val dcheroes = mutableListOf(
-            Heroes(id = 1, "Flash", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F320670435982947479%2F&psig=AOvVaw3TkxkWnFKWjH4H0ecxibTD&ust=1726381997677000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDhpqDowYgDFQAAAAAdAAAAABAQ"),
-            Heroes(id = 2, "SuperMan", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fas.com%2Fmeristation%2Fnoticias%2Fmarvel-presenta-el-nuevo-traje-del-capitan-america-para-el-comic-avengers-twilight-n%2F&psig=AOvVaw0y_9TA1CtEigdpuCyF9acX&ust=1726382319979000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNi0x77pwYgDFQAAAAAdAAAAABAJ"),
-            Heroes(id = 3, "Batman", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FThor_%2528Marvel_Cinematic_Universe%2529&psig=AOvVaw3eV0K3mUmsuLzAqeyEVGXA&ust=1726382449789000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjB5fjpwYgDFQAAAAAdAAAAABAE"),
-            Heroes(id = 4, "AcuaMan", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmagicdecor.in%2Fcollections%2Fhulk-wallpaper%2F&psig=AOvVaw16-QkbtZ_Yk0YHJ6QC_zSw&ust=1726382475504000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPDhioTqwYgDFQAAAAAdAAAAABAJ"),
-            Heroes(id = 5, "Wonder Woman", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rtve.es%2Fnoticias%2F20151026%2Fjulian-clemente-spiderman-mejor-personaje-ficcion-historia%2F1223940.shtml&psig=AOvVaw049PqUthxWN0iirvgcU0qN&ust=1726382518884000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPDd9pjqwYgDFQAAAAAdAAAAABAE"),
-            Heroes(id = 6, "Cyborg", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hobbyconsolas.com%2Fnoticias%2Fryan-reynolds-confirma-otro-regreso-otro-personaje-deadpool-2-1238984&psig=AOvVaw38krz4JjPQ9FK7Ot-sYYMe&ust=1726382535196000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJiiraPqwYgDFQAAAAAdAAAAABAJ"),
-            Heroes(id = 7, "Nombre SuperHeroe", "Link")
+            Category(id = 1, "Flash", "https://i.pinimg.com/736x/44/4a/55/444a552fd59d9c1f25413c32e5245d51.jpg"),
+            Category(id = 2, "SuperMan", "https://m.media-amazon.com/images/I/61x6y4d6PFL.jpg"),
+            Category(id = 3, "Batman", "https://1000marcas.net/wp-content/uploads/2019/11/Batman-Logo-2000.png"),
+            Category(id = 4, "AquaMan", "https://logos-world.net/wp-content/uploads/2023/05/Aquaman-Logo.png"),
+            Category(id = 5, "Wonder Woman", "https://turbologo.com/articles/wp-content/uploads/2019/12/Wonder-woman-first-logo.png"),
+            Category(id = 6, "Cyborg", "https://i.pinimg.com/originals/ea/90/d5/ea90d5dd396d0cd3168c7097b92ab641.jpg"),
         )
     }
 }

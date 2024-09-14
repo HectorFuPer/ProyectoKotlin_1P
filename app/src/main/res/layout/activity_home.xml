@@ -6,7 +6,9 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.HomeActivity">
+        tools:context=".ui.HomeActivity"
+        android:background="@color/MaterialGris"
+        >
 
     <LinearLayout
             android:id="@+id/header"
@@ -53,39 +55,43 @@
 
     </LinearLayout>
 
-<!--    <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Marvel"-->
-<!--            android:textSize="22sp"-->
-<!--            android:textStyle="bold"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/header"-->
-<!--            app:layout_constraintVertical_bias="0.1"/>-->
 
-<!--    <ImageView-->
-<!--            android:layout_width="200dp"-->
-<!--            android:layout_height="200dp"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/header"-->
-
-<!--            app:layout_constraintVertical_bias="0.124"/>-->
-
-    <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
+    <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Los heroes mas poderosos del planeta."
+            android:textSize="22sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/header"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.507"
+            android:padding="12dp"
+            android:gravity="center"
 
     />
+    <ImageView
+            android:id="@+id/imgDc"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header"
+            app:layout_constraintVertical_bias="0.195"
+            android:src="@drawable/dc"/>
+    <ImageView
+            android:id="@+id/imgMarvel"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgDc"
+            app:layout_constraintVertical_bias="0.174"
+            android:src="@drawable/marvel"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

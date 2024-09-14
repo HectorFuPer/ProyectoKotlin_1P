@@ -9,8 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.projecto_1p_77904.R
 import com.example.projecto_1p_77904.models.Category
+import com.squareup.picasso.Picasso
 
-class CategoryAdapter (val categories: List<Category>)
+class CategoryAdapter (val heroes: List<Category>)
     : RecyclerView.Adapter<CategoryViewHolder>()
 {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryViewHolder {
@@ -19,12 +20,13 @@ class CategoryAdapter (val categories: List<Category>)
     }
 
     override fun getItemCount(): Int {
-        return categories.count()
+        return heroes.count()
     }
 
     override fun onBindViewHolder(holder: CategoryViewHolder, position: Int) {
-        val category = categories[position]
+        val category = heroes[position]
         holder.categoryTextView.text = category.name
+        Picasso.get().load(category.image).into(holder.categoryImage)
     }
 
 }
