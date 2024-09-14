@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <!-- Colores básicos -->
+        <color name="Negro">#000000</color>
+        <color name="Blanco">#FFFFFF</color>
+        <color name="Rojo">#FF0000</color>
+        <color name="Verde">#00FF00</color>
+        <color name="Azul">#0000FF</color>
+        <color name="Amarillo">#FFFF00</color>
+        <color name="Cian">#00FFFF</color>
+        <color name="Magenta">#FF00FF</color>
+
+        <!-- Colores grises -->
+        <color name="GrisOscuro">#A9A9A9</color>
+        <color name="GrisClaro">#D3D3D3</color>
+        <color name="GrisMedio">#808080</color>
+
+        <!-- Colores pastel -->
+        <color name="RosaPastel">#FFC0CB</color>
+        <color name="VerdePastel">#77DD77</color>
+        <color name="AmarilloPastel">#FDFD96</color>
+        <color name="AzulPastel">#AEC6CF</color>
+        <color name="LilaPastel">#B39EB5</color>
+
+        <!-- Colores Material Design -->
+        <color name="MaterialRojo">#F44336</color>
+        <color name="MaterialVerde">#4CAF50</color>
+        <color name="MaterialAzul">#2196F3</color>
+        <color name="MaterialAmarillo">#FFEB3B</color>
+        <color name="MaterialGris">#9E9E9E</color>
+
+        <!-- Colores vibrantes -->
+        <color name="Naranja">#FFA500</color>
+        <color name="Morado">#800080</color>
+        <color name="Turquesa">#40E0D0</color>
+        <color name="Dorado">#FFD700</color>
+        <color name="Plateado">#C0C0C0</color>
+
+        <!-- Colores degradados claros -->
+        <color name="RojoClaro">#FF6666</color>
+        <color name="VerdeClaro">#66FF66</color>
+        <color name="AzulClaro">#6666FF</color>
+        <color name="AmarilloClaro">#FFFF66</color>
+
+        <!-- Colores degradados oscuros -->
+        <color name="RojoOscuro">#8B0000</color>
+        <color name="VerdeOscuro">#006400</color>
+        <color name="AzulOscuro">#00008B</color>
+        <color name="MoradoOscuro">#4B0082</color>
+
+        <!-- Otros colores populares -->
+        <color name="Marron">#A52A2A</color>
+        <color name="Crema">#FFFDD0</color>
+        <color name="Beige">#F5F5DC</color>
+        <color name="Lavanda">#E6E6FA</color>
+        <color name="Oliva">#808000</color>
+    </resources>
